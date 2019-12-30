@@ -1,0 +1,39 @@
+<!-- Table -->
+<div class="container" style="padding-top: 20px;">
+  <h2 align="center">Table with JSON data</h2>
+  <div class="col-sm-5" style="padding-top: 20px;padding-bottom: 20px;">
+    <input class="form-control" type="text" placeholder="Search........." [(ngModel)]="filter">
+  </div>
+  <table class="table table-bordered">
+    <!-- headers -->
+    <thead>
+    <tr>
+      <th>S.No.</th>
+      <th>Person_ID</th>
+      <th>Name</th>
+      <th>Course_Id</th>
+      <th>Course_Title</th>
+      <th>CreatedAt</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let rec of allLibb | async| filter:filter| paginate: { itemsPerPage:12, currentPage: p}">
+      <td>{{rec.id}}</td>
+      <td>{{rec.Person_Id}}</td>
+      <td>{{rec.Name}}</td>
+      <td>{{rec.Course_Id}}</td>
+      <td>{{rec.Course_Title}}</td>
+      <td>{{rec.Created_At}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteData(rec.id)">
+          <span class="glyphicon glyphicon-trash"></span>
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <ul class="Pagination">
+    <pagination-controls (pageChange)="p=$event"></pagination-controls>
+  </ul>
+</div>

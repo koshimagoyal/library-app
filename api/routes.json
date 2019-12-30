@@ -1,0 +1,5 @@
+{
+  "/api/*": "/$1",
+  "target": "http://localhost:3000/",
+  "Access-Control-Allow-Origin": "*"
+}
