@@ -1,6 +1,9 @@
 # LibraryApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21 with following functionalities:
+1. Delete data from table
+2. Search 
+3. Pagination
 
 ## Development server
 
