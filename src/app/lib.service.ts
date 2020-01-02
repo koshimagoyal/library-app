@@ -17,9 +17,6 @@ export class LibService  {
       catchError(this.errorHandler));
   }
   deleteData(id: number) {
-    const options = {
-      params: new HttpParams().set('SNo', `${id}`),
-    };
     return this.httpService.delete<Library[]>(this.url + '/' + id).pipe(catchError(this.errorHandler)); }
   errorHandler(error) {
     let errorMessage = '';

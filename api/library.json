@@ -25,14 +25,6 @@
       "Created_At": "2002-05-18T07:52:52.986Z"
     },
     {
-      "id": 5,
-      "Course_Title": "Machine Learning",
-      "Name": "Keanu",
-      "Course_Id": 108,
-      "Person_Id": 171,
-      "Created_At": "2009-07-01T06:25:44.789Z"
-    },
-    {
       "id": 7,
       "Course_Title": "Deep Learning",
       "Name": "Macy",

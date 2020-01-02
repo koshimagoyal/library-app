@@ -28,7 +28,7 @@ export class DisplayLibraryComponent implements OnInit {
   deleteData(id: any) {
     this.libService.deleteData(id).subscribe(data => {
       return this.loadDisplay();
-    }); /*.pipe(map(data => data.filter(i => i.Id === id)));*/
+    });
   }
   ngOnInit() {
     this.loadDisplay();
